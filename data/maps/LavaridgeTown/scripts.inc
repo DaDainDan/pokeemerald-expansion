@@ -17,7 +17,7 @@ LavaridgeTown_OnTransition:
 	call_if_eq VAR_LAVARIDGE_TOWN_STATE, 1, LavaridgeTown_EventScript_HideMapNamePopup
 	end
 
-LavaridgeTown_OnResume
+LavaridgeTown_OnResume:
 	setstepcallback STEP_CB_ASH
 	end
 
