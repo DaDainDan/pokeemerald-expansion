@@ -429,8 +429,7 @@
     "TerraCave_Entrance",
     "TerraCave_End",
     "AlteringCave",
-    "MeteorFalls_StevensCave",
-    "PetalburgExt"
+    "MeteorFalls_StevensCave"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
