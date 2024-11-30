@@ -3633,7 +3633,7 @@ u8 AtkCanceller_UnableToUseMove(u32 moveType)
             {
                 u32 ability = GetBattlerAbility(gBattlerAttacker);
 
-                if (ability == ABILITY_SKILL_LINK)
+                if (ability == ABILITY_SKILL_LINK || GetBattlerHoldEffect(gBattlerAttacker, TRUE) == HOLD_EFFECT_LOADED_DICE)
                 {
                     gMultiHitCounter = 5;
                 }
@@ -11488,10 +11488,8 @@ bool32 CanTargetBattler(u32 battlerAtk, u32 battlerDef, u16 move)
 
 static void SetRandomMultiHitCounter()
 {
-    if (GetBattlerHoldEffect(gBattlerAttacker, TRUE) == HOLD_EFFECT_LOADED_DICE)
-        gMultiHitCounter = RandomUniform(RNG_LOADED_DICE, 4, 5);
-    else if (B_MULTI_HIT_CHANCE >= GEN_5)
-        gMultiHitCounter = RandomWeighted(RNG_HITS, 0, 0, 7, 7, 3, 3); // 35%: 2 hits, 35%: 3 hits, 15% 4 hits, 15% 5 hits.
+    if (B_MULTI_HIT_CHANCE >= GEN_5)
+        gMultiHitCounter = RandomWeighted(RNG_HITS, 0, 0, 0, 1, 6, 3); // 10%: 3 hits, 60% 4 hits, 30% 5 hits.
     else
         gMultiHitCounter = RandomWeighted(RNG_HITS, 0, 0, 3, 3, 1, 1); // 37.5%: 2 hits, 37.5%: 3 hits, 12.5% 4 hits, 12.5% 5 hits.
 }

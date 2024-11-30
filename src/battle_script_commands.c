@@ -11357,7 +11357,7 @@ static void Cmd_manipulatedamage(void)
         }
         else
         {
-            gBattleMoveDamage /= 2;
+            gBattleMoveDamage /= 8;
         }
         if (gBattleMoveDamage == 0)
             gBattleMoveDamage = 1;
@@ -12033,7 +12033,7 @@ static void Cmd_setmultihitcounter(void)
             // WARNING: These seem to be unused, see SetRandomMultiHitCounter.
             if (B_MULTI_HIT_CHANCE >= GEN_5)
                 // 35%: 2 hits, 35%: 3 hits, 15% 4 hits, 15% 5 hits.
-                gMultiHitCounter = RandomWeighted(RNG_HITS, 0, 0, 7, 7, 3, 3);
+                gMultiHitCounter = RandomWeighted(RNG_HITS, 0, 0, 0, 1, 6, 3);
             else
                 // 37.5%: 2 hits, 37.5%: 3 hits, 12.5% 4 hits, 12.5% 5 hits.
                 gMultiHitCounter = RandomWeighted(RNG_HITS, 0, 0, 3, 3, 1, 1);
@@ -15196,6 +15196,12 @@ static void Cmd_handleballthrow(void)
             case ITEM_ULTRA_BALL:
                 ballMultiplier = 200;
                 break;
+            case ITEM_PREMIER_BALL:
+                ballMultiplier = 150;
+                break;
+            case ITEM_LUXURY_BALL:
+                ballMultiplier = 150;
+                break;
             case ITEM_SPORT_BALL:
                 if (B_SPORT_BALL_MODIFIER <= GEN_7)
                     ballMultiplier = 150;
@@ -15209,19 +15215,19 @@ static void Cmd_handleballthrow(void)
                 break;
             case ITEM_NET_BALL:
                 if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_WATER) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_BUG))
-                    ballMultiplier = B_NET_BALL_MODIFIER >= GEN_7 ? 350 : 300;
+                    ballMultiplier = B_NET_BALL_MODIFIER >= GEN_7 ? 400 : 300;
                 break;
             case ITEM_DIVE_BALL:
                 if (GetCurrentMapType() == MAP_TYPE_UNDERWATER
                     || (B_DIVE_BALL_MODIFIER >= GEN_4 && (gIsFishingEncounter || gIsSurfingEncounter)))
-                    ballMultiplier = 350;
+                    ballMultiplier = 400;
                 break;
             case ITEM_NEST_BALL:
                 if (B_NEST_BALL_MODIFIER >= GEN_6)
                 {
-                    //((41 - Pokémon's level) ÷ 10)× if Pokémon's level is between 1 and 29, 1× otherwise.
-                    if (gBattleMons[gBattlerTarget].level < 30)
-                        ballMultiplier = 410 - (gBattleMons[gBattlerTarget].level * 10);
+                    //((75 - 2.5*Pokémon's level) ÷ 10)× if Pokémon's level is between 1 and 25, 1× otherwise.
+                    if (gBattleMons[gBattlerTarget].level < 26)
+                        ballMultiplier = 750 - (gBattleMons[gBattlerTarget].level * 25);
                 }
                 else if (B_NEST_BALL_MODIFIER >= GEN_5)
                 {
@@ -15239,7 +15245,7 @@ static void Cmd_handleballthrow(void)
                 break;
             case ITEM_REPEAT_BALL:
                 if (GetSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gBattlerTarget].species), FLAG_GET_CAUGHT))
-                    ballMultiplier = (B_REPEAT_BALL_MODIFIER >= GEN_7 ? 350 : 300);
+                    ballMultiplier = (B_REPEAT_BALL_MODIFIER >= GEN_7 ? 800 : 300);
                 break;
             case ITEM_TIMER_BALL:
                 ballMultiplier = 100 + (gBattleResults.battleTurnCounter * (B_TIMER_BALL_MODIFIER >= GEN_5 ? 30 : 10));
@@ -15247,9 +15253,8 @@ static void Cmd_handleballthrow(void)
                     ballMultiplier = 400;
                 break;
             case ITEM_DUSK_BALL:
-                i = GetTimeOfDay();
-                if (i == TIME_EVENING || i == TIME_NIGHT || gMapHeader.cave || gMapHeader.mapType == MAP_TYPE_UNDERGROUND)
-                    ballMultiplier = (B_DUSK_BALL_MODIFIER >= GEN_7 ? 300 : 350);
+                if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_GHOST) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_DARK))
+                    ballMultiplier = 400;
                 break;
             case ITEM_QUICK_BALL:
                 if (gBattleResults.battleTurnCounter == 0)
@@ -15264,7 +15269,7 @@ static void Cmd_handleballthrow(void)
                     ballMultiplier = 200;
                 break;
             case ITEM_LURE_BALL:
-                if (gIsFishingEncounter)
+                if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_DRAGON))
                 {
                     if (B_LURE_BALL_MODIFIER >= GEN_8)
                         ballMultiplier = 400;
@@ -15275,27 +15280,16 @@ static void Cmd_handleballthrow(void)
                 }
                 break;
             case ITEM_MOON_BALL:
-            {
-                const struct Evolution *evolutions = GetSpeciesEvolutions(gBattleMons[gBattlerTarget].species);
-                if (evolutions == NULL)
-                    break;
-                for (i = 0; evolutions[i].method != EVOLUTIONS_END; i++)
-                {
-                    if (evolutions[i].method == EVO_ITEM
-                        && evolutions[i].param == ITEM_MOON_STONE)
-                        ballMultiplier = 400;
-                }
-            }
-            break;
+                i = GetTimeOfDay();
+                if (i == TIME_EVENING || i == TIME_NIGHT || gMapHeader.cave || gMapHeader.mapType == MAP_TYPE_UNDERGROUND)
+                    ballMultiplier = (B_DUSK_BALL_MODIFIER >= GEN_7 ? 400 : 350);
+                break;
             case ITEM_LOVE_BALL:
-                if (gBattleMons[gBattlerTarget].species == gBattleMons[gBattlerAttacker].species)
-                {
                     u8 gender1 = GetMonGender(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]]);
                     u8 gender2 = GetMonGender(&gPlayerParty[gBattlerPartyIndexes[gBattlerAttacker]]);
 
                     if (gender1 != gender2 && gender1 != MON_GENDERLESS && gender2 != MON_GENDERLESS)
-                        ballMultiplier = 800;
-                }
+                        ballMultiplier = 500;
                 break;
             case ITEM_FAST_BALL:
                 if (gSpeciesInfo[gBattleMons[gBattlerTarget].species].baseSpeed >= 100)
@@ -15306,13 +15300,13 @@ static void Cmd_handleballthrow(void)
                 if (B_HEAVY_BALL_MODIFIER >= GEN_7)
                 {
                     if (i < 1000)
-                        ballAddition = -20;
+                        ballMultiplier = 100;
                     else if (i < 2000)
-                        ballAddition = 0;
+                        ballMultiplier = 200;
                     else if (i < 3000)
-                        ballAddition = 20;
+                        ballMultiplier = 300;
                     else
-                        ballAddition = 30;
+                        ballMultiplier = 400;
                 }
                 else if (B_HEAVY_BALL_MODIFIER >= GEN_4)
                 {
