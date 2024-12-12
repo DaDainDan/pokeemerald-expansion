@@ -85,12 +85,12 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_WURMPLE"
+                "species": "SPECIES_PIDGEY"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_POOCHYENA"
+                "species": "SPECIES_WURMPLE"
               },
               {
                 "min_level": 2,
@@ -472,12 +472,12 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_POOCHYENA"
+                "species": "SPECIES_WOOPER"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MARILL"
+                "species": "SPECIES_AZURILL"
               },
               {
                 "min_level": 4,
@@ -11655,12 +11655,12 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_PETILIL"
+                "species": "SPECIES_KRICKETOT"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_PETILIL"
+                "species": "SPECIES_SUNKERN"
               },
               {
                 "min_level": 5,
