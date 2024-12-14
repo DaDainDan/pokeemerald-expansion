@@ -87,15 +87,16 @@ u32 GetCurrentEVCap(void)
 
     static const u16 sEvCapFlagMap[][2] = {
         // Define EV caps for each milestone
-        {FLAG_BADGE01_GET, 30},
-        {FLAG_BADGE02_GET, 90},
-        {FLAG_BADGE03_GET, 150},
-        {FLAG_BADGE04_GET, 210},
-        {FLAG_BADGE05_GET, 270},
-        {FLAG_BADGE06_GET, 330},
-        {FLAG_BADGE07_GET, 390},
-        {FLAG_BADGE08_GET, 450},
-        {FLAG_IS_CHAMPION, MAX_TOTAL_EVS},
+        {FLAG_BADGE01_GET, 20},
+        {FLAG_BADGE02_GET, 60},
+        {FLAG_BADGE03_GET, 100},
+        {FLAG_BADGE04_GET, 140},
+        {FLAG_BADGE05_GET, 180},
+        {FLAG_BADGE06_GET, 240},
+        {FLAG_BADGE07_GET, 300},
+        {FLAG_BADGE08_GET, 360},
+        {FLAG_DEFEATED_WALLY_VICTORY_ROAD, 400},
+        {FLAG_IS_CHAMPION, 440},
     };
 
     if (B_EV_CAP_TYPE == EV_CAP_FLAG_LIST)

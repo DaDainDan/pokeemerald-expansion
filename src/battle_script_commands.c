@@ -15163,10 +15163,10 @@ static void Cmd_handleballthrow(void)
             case BALL_ULTRA:
                 ballMultiplier = 200;
                 break;
-            case ITEM_PREMIER_BALL:
+            case BALL_PREMIER:
                 ballMultiplier = 150;
                 break;
-            case ITEM_LUXURY_BALL:
+            case BALL_LUXURY:
                 ballMultiplier = 150;
                 break;
             case BALL_SPORT:
