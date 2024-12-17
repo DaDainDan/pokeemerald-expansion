@@ -1152,3 +1152,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
 
+
+	.include "data/maps/AlteringCave_B1F_1R/scripts.inc"
+
+	.include "data/maps/AlteringCave_B1F_2R/scripts.inc"
+
+	.include "data/maps/AlteringCave_B2F/scripts.inc"
