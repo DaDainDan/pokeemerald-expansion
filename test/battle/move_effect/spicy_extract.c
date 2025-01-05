@@ -30,7 +30,7 @@ SINGLE_BATTLE_TEST("Spicy Extract is prevented by target's ability if it's Attac
     u16 ability;
 
     PARAMETRIZE { ability = ABILITY_CLEAR_BODY; }
-    PARAMETRIZE { ability = ABILITY_LIGHT_METAL; }
+    PARAMETRIZE { ability = ABILITY_RESILIENCE; }
 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SWORDS_DANCE].effect == EFFECT_ATTACK_UP_2);

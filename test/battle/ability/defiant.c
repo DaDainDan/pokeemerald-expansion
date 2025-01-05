@@ -5,9 +5,9 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises player's Attack after Intimidate")
 {
     u32 abilityLeft, abilityRight;
 
-    PARAMETRIZE { abilityLeft = ABILITY_VITAL_SPIRIT; abilityRight = ABILITY_VITAL_SPIRIT; }
-    PARAMETRIZE { abilityLeft = ABILITY_VITAL_SPIRIT; abilityRight = ABILITY_DEFIANT; }
-    PARAMETRIZE { abilityLeft = ABILITY_DEFIANT; abilityRight = ABILITY_VITAL_SPIRIT; }
+    PARAMETRIZE { abilityLeft = ABILITY_STEADFAST; abilityRight = ABILITY_STEADFAST; }
+    PARAMETRIZE { abilityLeft = ABILITY_STEADFAST; abilityRight = ABILITY_DEFIANT; }
+    PARAMETRIZE { abilityLeft = ABILITY_DEFIANT; abilityRight = ABILITY_STEADFAST; }
     PARAMETRIZE { abilityLeft = ABILITY_DEFIANT; abilityRight = ABILITY_DEFIANT; }
 
     GIVEN {
@@ -63,9 +63,9 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises opponent's Attack after Intimidate")
 {
     u32 abilityLeft, abilityRight;
 
-    PARAMETRIZE { abilityLeft = ABILITY_VITAL_SPIRIT; abilityRight = ABILITY_VITAL_SPIRIT; }
-    PARAMETRIZE { abilityLeft = ABILITY_VITAL_SPIRIT; abilityRight = ABILITY_DEFIANT; }
-    PARAMETRIZE { abilityLeft = ABILITY_DEFIANT; abilityRight = ABILITY_VITAL_SPIRIT; }
+    PARAMETRIZE { abilityLeft = ABILITY_STEADFAST; abilityRight = ABILITY_STEADFAST; }
+    PARAMETRIZE { abilityLeft = ABILITY_STEADFAST; abilityRight = ABILITY_DEFIANT; }
+    PARAMETRIZE { abilityLeft = ABILITY_DEFIANT; abilityRight = ABILITY_STEADFAST; }
     PARAMETRIZE { abilityLeft = ABILITY_DEFIANT; abilityRight = ABILITY_DEFIANT; }
 
     GIVEN {

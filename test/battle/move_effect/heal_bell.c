@@ -40,7 +40,7 @@ DOUBLE_BATTLE_TEST("Heal Bell does not cure soundproof partners")
 {
     u32 ability;
 
-    PARAMETRIZE { ability = ABILITY_SCRAPPY; }
+    PARAMETRIZE { ability = ABILITY_GUTS; }
     PARAMETRIZE { ability = ABILITY_SOUNDPROOF; }
 
     ASSUME(B_HEAL_BELL_SOUNDPROOF != GEN_5);
@@ -66,7 +66,7 @@ SINGLE_BATTLE_TEST("Heal Bell cures inactive soundproof Pokemon")
 {
     u32 ability;
 
-    PARAMETRIZE { ability = ABILITY_SCRAPPY; }
+    PARAMETRIZE { ability = ABILITY_GUTS; }
     PARAMETRIZE { ability = ABILITY_SOUNDPROOF; }
 
     ASSUME(B_HEAL_BELL_SOUNDPROOF >= GEN_5);

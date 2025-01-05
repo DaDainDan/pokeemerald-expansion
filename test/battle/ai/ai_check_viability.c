@@ -196,9 +196,9 @@ AI_DOUBLE_BATTLE_TEST("AI chooses moves that cure self or partner")
 {
     u32 status1_0, status1_1, partnerAbility;
 
-    PARAMETRIZE { status1_0 = STATUS1_NONE; status1_1 = STATUS1_NONE; partnerAbility = ABILITY_SCRAPPY; }
-    PARAMETRIZE { status1_0 = STATUS1_TOXIC_POISON; status1_1 = STATUS1_NONE; partnerAbility = ABILITY_SCRAPPY; }
-    PARAMETRIZE { status1_0 = STATUS1_NONE; status1_1 = STATUS1_PARALYSIS; partnerAbility = ABILITY_SCRAPPY; }
+    PARAMETRIZE { status1_0 = STATUS1_NONE; status1_1 = STATUS1_NONE; partnerAbility = ABILITY_GUTS; }
+    PARAMETRIZE { status1_0 = STATUS1_TOXIC_POISON; status1_1 = STATUS1_NONE; partnerAbility = ABILITY_GUTS; }
+    PARAMETRIZE { status1_0 = STATUS1_NONE; status1_1 = STATUS1_PARALYSIS; partnerAbility = ABILITY_GUTS; }
     PARAMETRIZE { status1_0 = STATUS1_NONE; status1_1 = STATUS1_PARALYSIS; partnerAbility = ABILITY_SOUNDPROOF; }
 
     GIVEN {
@@ -221,8 +221,8 @@ AI_SINGLE_BATTLE_TEST("AI chooses moves that cure inactive party members")
 {
     u32 status, ability;
 
-    PARAMETRIZE { status = STATUS1_TOXIC_POISON; ability = ABILITY_SCRAPPY; }
-    PARAMETRIZE { status = STATUS1_NONE; ability = ABILITY_SCRAPPY; }
+    PARAMETRIZE { status = STATUS1_TOXIC_POISON; ability = ABILITY_GUTS; }
+    PARAMETRIZE { status = STATUS1_NONE; ability = ABILITY_GUTS; }
     PARAMETRIZE { status = STATUS1_TOXIC_POISON; ability = ABILITY_SOUNDPROOF; }
 
     GIVEN {

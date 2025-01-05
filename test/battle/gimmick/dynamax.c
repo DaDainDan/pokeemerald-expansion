@@ -214,7 +214,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon can be switched out by Eject But
 SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon cannot have their ability swapped to another Pokemon's")
 {
     GIVEN {
-        PLAYER(SPECIES_MILTANK) { Ability(ABILITY_SCRAPPY); }
+        PLAYER(SPECIES_MILTANK) { Ability(ABILITY_GUTS); }
         OPPONENT(SPECIES_RUNERIGUS) { Ability(ABILITY_WANDERING_SPIRIT); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE, gimmick: GIMMICK_DYNAMAX); MOVE(opponent, MOVE_SKILL_SWAP); }
@@ -223,7 +223,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon cannot have their ability swappe
         MESSAGE("The opposing Runerigus used Skill Swap!");
         MESSAGE("But it failed!");
     } THEN {
-        EXPECT_EQ(player->ability, ABILITY_SCRAPPY);
+        EXPECT_EQ(player->ability, ABILITY_GUTS);
     }
 }
 

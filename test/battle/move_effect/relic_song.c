@@ -44,7 +44,7 @@ SINGLE_BATTLE_TEST("Relic Song will become a Water-type move when used by a Pok√
 {
     GIVEN {
         PLAYER(SPECIES_VULPIX);
-        OPPONENT(SPECIES_POPPLIO) { Ability(ABILITY_LIQUID_VOICE); }
+        OPPONENT(SPECIES_POPPLIO) { Ability(ABILITY_MINSTREL); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_RELIC_SONG); }
     } SCENE {
