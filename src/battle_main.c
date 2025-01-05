@@ -3419,7 +3419,7 @@ const u8* FaintClearSetData(u32 battler)
 
                 // If the released mon can be confused, do so.
                 // Don't use CanBeConfused here, since it can cause issues in edge cases.
-                if (!(GetBattlerAbility(otherSkyDropper) == ABILITY_OWN_TEMPO
+                if (!(GetBattlerAbility(otherSkyDropper) == ABILITY_INNER_FOCUS
                     || gBattleMons[otherSkyDropper].status2 & STATUS2_CONFUSION
                     || IsBattlerTerrainAffected(otherSkyDropper, STATUS_FIELD_MISTY_TERRAIN)))
                 {
@@ -4327,7 +4327,8 @@ static void HandleTurnActionSelectionState(void)
                     if (((gBattleTypeFlags & (BATTLE_TYPE_LINK
                                             | BATTLE_TYPE_FRONTIER_NO_PYRAMID
                                             | BATTLE_TYPE_EREADER_TRAINER
-                                            | BATTLE_TYPE_RECORDED_LINK))
+                                            | BATTLE_TYPE_RECORDED_LINK
+                                            | BATTLE_TYPE_TRAINER))
                                             && !gTestRunnerEnabled)
                                             // Or if currently held by Sky Drop
                                             || gStatuses3[battler] & STATUS3_SKY_DROPPED)
@@ -4755,18 +4756,24 @@ u32 GetBattlerTotalSpeedStatArgs(u32 battler, u32 ability, u32 holdEffect)
     if (WEATHER_HAS_EFFECT)
     {
         if (ability == ABILITY_SWIFT_SWIM       && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA && gBattleWeather & B_WEATHER_RAIN)
-            speed *= 2;
+            speed = (speed * 133) / 100;
         else if (ability == ABILITY_CHLOROPHYLL && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA && gBattleWeather & B_WEATHER_SUN)
-            speed *= 2;
+            speed = (speed * 125) / 100;
         else if (ability == ABILITY_SAND_RUSH   && gBattleWeather & B_WEATHER_SANDSTORM)
-            speed *= 2;
+            speed = (speed * 133) / 100;
         else if (ability == ABILITY_SLUSH_RUSH  && (gBattleWeather & (B_WEATHER_HAIL | B_WEATHER_SNOW)))
-            speed *= 2;
+            speed = (speed * 133) / 100;
+        else if (ability == ABILITY_SOLAR_POWER && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA && gBattleWeather & B_WEATHER_SUN)
+            speed = (speed * 120);
     }
 
     // other abilities
-    if (ability == ABILITY_QUICK_FEET && gBattleMons[battler].status1 & STATUS1_ANY)
-        speed = (speed * 150) / 100;
+    if (ability == ABILITY_QUICK_FEET && IsBattlerGrounded(battler))
+        speed = (speed * 125) / 100;
+    else if (ability == ABILITY_FLARE_BOOST && gBattleMons[battler].status1 & STATUS1_BURN)
+        speed = (speed * 125) / 100;
+    else if (ability == ABILITY_HUSTLE)
+        speed = (speed * 133) / 100;
     else if (ability == ABILITY_SURGE_SURFER && gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
         speed *= 2;
     else if (ability == ABILITY_SLOW_START && gDisableStructs[battler].slowStartTimer != 0)
@@ -4793,10 +4800,14 @@ u32 GetBattlerTotalSpeedStatArgs(u32 battler, u32 ability, u32 holdEffect)
         speed /= 2;
     else if (holdEffect == HOLD_EFFECT_IRON_BALL)
         speed /= 2;
+    else if (holdEffect == HOLD_EFFECT_FLOAT_STONE)
+        speed = (speed * 110) / 100;
     else if (holdEffect == HOLD_EFFECT_CHOICE_SCARF && GetActiveGimmick(battler) != GIMMICK_DYNAMAX)
-        speed = (speed * 150) / 100;
-    else if (holdEffect == HOLD_EFFECT_QUICK_POWDER && gBattleMons[battler].species == SPECIES_DITTO && !(gBattleMons[battler].status2 & STATUS2_TRANSFORMED))
-        speed *= 2;
+        speed = (speed * 133) / 100;
+    else if (holdEffect == HOLD_EFFECT_EVIOLITE && CanEvolve(gBattleMons[battler].species))
+        speed = (speed * 115) / 100;
+    else if (holdEffect == HOLD_EFFECT_QUICK_POWDER && (gBattleMons[battler].species == SPECIES_DITTO || gBattleMons[battler].status2 & STATUS2_TRANSFORMED))
+        speed = (speed * 125) / 100;
 
     // various effects
     if (gSideStatuses[GetBattlerSide(battler)] & SIDE_STATUS_TAILWIND)
@@ -4805,7 +4816,7 @@ u32 GetBattlerTotalSpeedStatArgs(u32 battler, u32 ability, u32 holdEffect)
         speed *= 2;
 
     // paralysis drop
-    if (gBattleMons[battler].status1 & STATUS1_PARALYSIS && ability != ABILITY_QUICK_FEET)
+    if (gBattleMons[battler].status1 & STATUS1_PARALYSIS && ability != ABILITY_INNER_FOCUS)
         speed /= B_PARALYSIS_SPEED >= GEN_7 ? 2 : 4;
 
     if (gSideStatuses[GetBattlerSide(battler)] & SIDE_STATUS_SWAMP)
@@ -4854,6 +4865,22 @@ s8 GetMovePriority(u32 battler, u16 move)
     {
         priority++;
     }
+    else if (ability == ABILITY_ELECTROLIGHT && gMovesInfo[move].type == TYPE_ELECTRIC)
+    {
+        priority++;
+    }
+    else if (ability == ABILITY_MINSTREL && gMovesInfo[move].soundMove)
+    {
+        priority++;
+    }
+    else if (ability == ABILITY_ANALYTIC)
+    {
+        priority--;
+    }
+    else if (ability == ABILITY_PROPELLER_TAIL && IsMoveMakingContact(move, battler))
+    {
+        priority++;
+    }
     else if (ability == ABILITY_PRANKSTER && IS_MOVE_STATUS(move))
     {
         gProtectStructs[battler].pranksterElevated = 1;
@@ -4864,10 +4891,15 @@ s8 GetMovePriority(u32 battler, u16 move)
         priority++;
     }
     else if (ability == ABILITY_TRIAGE && IsHealingMove(move))
+    {    
         priority += 3;
+    }
 
-    if (gProtectStructs[battler].quash)
-        priority = -8;
+    if (ability == ABILITY_OWN_TEMPO)
+        priority = 0;
+
+    if (gProtectStructs[battler].quash && ability != ABILITY_OWN_TEMPO)
+        priority = -9;
 
     return priority;
 }
@@ -4887,11 +4919,21 @@ s32 GetWhichBattlerFasterArgs(u32 battler1, u32 battler2, bool32 ignoreChosenMov
         bool32 battler2HasQuickEffect = gProtectStructs[battler2].quickDraw || gProtectStructs[battler2].usedCustapBerry;
         bool32 battler1HasStallingAbility = ability1 == ABILITY_STALL || (ability1 == ABILITY_MYCELIUM_MIGHT && IS_MOVE_STATUS(gChosenMoveByBattler[battler1]));
         bool32 battler2HasStallingAbility = ability2 == ABILITY_STALL || (ability2 == ABILITY_MYCELIUM_MIGHT && IS_MOVE_STATUS(gChosenMoveByBattler[battler2]));
+        bool32 battler1HasQuickAbility = ability1 == ABILITY_MAJESTY;
+        bool32 battler2HasQuickAbility = ability2 == ABILITY_MAJESTY;
 
-        if (battler1HasQuickEffect && !battler2HasQuickEffect)
+        if (battler1HasQuickAbility && !battler2HasQuickAbility)
+            strikesFirst = 1;
+        else if (battler2HasQuickAbility && !battler1HasQuickAbility)
+            strikesFirst = -1;
+        else if (battler1HasQuickEffect && !battler2HasQuickEffect)
             strikesFirst = 1;
         else if (battler2HasQuickEffect && !battler1HasQuickEffect)
             strikesFirst = -1;
+        else if (holdEffectBattler1 == HOLD_EFFECT_ZOOM_LENS && holdEffectBattler2 != HOLD_EFFECT_ZOOM_LENS)
+            strikesFirst = -1;
+        else if (holdEffectBattler2 == HOLD_EFFECT_ZOOM_LENS && holdEffectBattler1 != HOLD_EFFECT_ZOOM_LENS)
+            strikesFirst = 1;
         else if (holdEffectBattler1 == HOLD_EFFECT_LAGGING_TAIL && holdEffectBattler2 != HOLD_EFFECT_LAGGING_TAIL)
             strikesFirst = -1;
         else if (holdEffectBattler2 == HOLD_EFFECT_LAGGING_TAIL && holdEffectBattler1 != HOLD_EFFECT_LAGGING_TAIL)
@@ -5088,7 +5130,6 @@ static void SetActionsAndBattlersTurnOrder(void)
                     gActionsByTurnOrder[turnOrderId] = gChosenActionByBattler[battler];
                     gBattlerByTurnOrder[turnOrderId] = battler;
                     gBattleStruct->quickClawRandom[battler] = RandomPercentage(RNG_QUICK_CLAW, GetBattlerHoldEffectParam(battler));
-                    gBattleStruct->quickDrawRandom[battler] = RandomPercentage(RNG_QUICK_DRAW, 30);
                     turnOrderId++;
                 }
             }
@@ -5277,22 +5318,22 @@ static void TryChangingTurnOrderEffects(u32 battler1, u32 battler2)
 
     // Battler 1
     // Quick Draw
-    if (ability1 == ABILITY_QUICK_DRAW && !IS_MOVE_STATUS(gChosenMoveByBattler[battler1]) && gBattleStruct->quickDrawRandom[battler1])
+    if (ability1 == ABILITY_QUICK_DRAW && !IS_MOVE_STATUS(gChosenMoveByBattler[battler1]) && gDisableStructs[gBattlerAttacker].isFirstTurn)
         gProtectStructs[battler1].quickDraw = TRUE;
     // Quick Claw and Custap Berry
     if (!gProtectStructs[battler1].quickDraw
      && ((holdEffectBattler1 == HOLD_EFFECT_QUICK_CLAW && gBattleStruct->quickClawRandom[battler1])
-     || (holdEffectBattler1 == HOLD_EFFECT_CUSTAP_BERRY && HasEnoughHpToEatBerry(battler1, 4, gBattleMons[battler1].item))))
+     || (holdEffectBattler1 == HOLD_EFFECT_CUSTAP_BERRY && HasEnoughHpToEatBerry(battler1, 3, gBattleMons[battler1].item))))
         gProtectStructs[battler1].usedCustapBerry = TRUE;
 
     // Battler 2
     // Quick Draw
-    if (ability2 == ABILITY_QUICK_DRAW && !IS_MOVE_STATUS(gChosenMoveByBattler[battler2]) && gBattleStruct->quickDrawRandom[battler2])
+    if (ability2 == ABILITY_QUICK_DRAW && !IS_MOVE_STATUS(gChosenMoveByBattler[battler2]) && gDisableStructs[gBattlerAttacker].isFirstTurn)
         gProtectStructs[battler2].quickDraw = TRUE;
     // Quick Claw and Custap Berry
     if (!gProtectStructs[battler2].quickDraw
      && ((holdEffectBattler2 == HOLD_EFFECT_QUICK_CLAW && gBattleStruct->quickClawRandom[battler2])
-     || (holdEffectBattler2 == HOLD_EFFECT_CUSTAP_BERRY && HasEnoughHpToEatBerry(battler2, 4, gBattleMons[battler2].item))))
+     || (holdEffectBattler2 == HOLD_EFFECT_CUSTAP_BERRY && HasEnoughHpToEatBerry(battler2, 3, gBattleMons[battler2].item))))
         gProtectStructs[battler2].usedCustapBerry = TRUE;
 }
 
@@ -6017,20 +6058,6 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
     {
         if (gMain.inBattle && ateBoost != NULL)
             *ateBoost = TRUE;
-    }
-    else if (moveType != TYPE_NORMAL
-          && moveEffect != EFFECT_HIDDEN_POWER
-          && moveEffect != EFFECT_WEATHER_BALL
-          && ability == ABILITY_NORMALIZE
-          && GetActiveGimmick(battler) != GIMMICK_Z_MOVE)
-    {
-        if (gMain.inBattle && ateBoost != NULL && GetActiveGimmick(battler) != GIMMICK_DYNAMAX)
-            *ateBoost = TRUE;
-        return TYPE_NORMAL;
-    }
-    else if (gMovesInfo[move].soundMove && ability == ABILITY_LIQUID_VOICE)
-    {
-        return TYPE_WATER;
     }
     else if (moveEffect == EFFECT_AURA_WHEEL && species == SPECIES_MORPEKO_HANGRY)
     {
