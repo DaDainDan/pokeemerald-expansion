@@ -335,18 +335,18 @@ static const u16 sFarfetchdFormSpeciesIdTable[] = {
 
 #if P_FAMILY_GRIMER
 static const u16 sGrimerFormSpeciesIdTable[] = {
-    SPECIES_GRIMER,
 #if P_ALOLAN_FORMS
     SPECIES_GRIMER_ALOLA,
-#endif
+#endif    
+    SPECIES_GRIMER,
     FORM_SPECIES_END,
 };
 
 static const u16 sMukFormSpeciesIdTable[] = {
-    SPECIES_MUK,
 #if P_ALOLAN_FORMS
     SPECIES_MUK_ALOLA,
-#endif
+#endif    
+    SPECIES_MUK,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_GRIMER

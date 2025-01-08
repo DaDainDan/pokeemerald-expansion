@@ -17811,7 +17811,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .expYield = 217,
     #endif
         .evYield_SpAttack = 2,
-        .evYield_Attack = 2,
+        .evYield_Attack = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 80,
         .friendship = 35,
