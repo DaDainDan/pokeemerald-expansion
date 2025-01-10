@@ -655,10 +655,10 @@ static const u16 sDudunsparceFormSpeciesIdTable[] = {
 
 #if P_FAMILY_QWILFISH
 static const u16 sQwilfishFormSpeciesIdTable[] = {
-    SPECIES_QWILFISH,
 #if P_HISUIAN_FORMS
     SPECIES_QWILFISH_HISUI,
 #endif
+    SPECIES_QWILFISH,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_QWILFISH
