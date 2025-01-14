@@ -347,7 +347,7 @@
 #define P_FAMILY_DUCKLETT                P_GEN_5_POKEMON
 #define P_FAMILY_VANILLITE               P_GEN_5_POKEMON
 #define P_FAMILY_DEERLING                FALSE
-#define P_FAMILY_EMOLGA                  P_GEN_5_POKEMON
+#define P_FAMILY_EMOLGA                  FALSE
 #define P_FAMILY_KARRABLAST              P_GEN_5_POKEMON
 #define P_FAMILY_FOONGUS                 FALSE
 #define P_FAMILY_FRILLISH                P_GEN_5_POKEMON

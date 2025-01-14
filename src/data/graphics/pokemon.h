@@ -16554,7 +16554,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if P_MEGA_EVOLUTIONS
+#if TRUE
     const u32 gMonFrontPic_AudinoMega[] = INCBIN_U32("graphics/pokemon/audino/mega/front.4bpp.lz");
     const u32 gMonPalette_AudinoMega[] = INCBIN_U32("graphics/pokemon/audino/mega/normal.gbapal.lz");
     const u32 gMonBackPic_AudinoMega[] = INCBIN_U32("graphics/pokemon/audino/mega/back.4bpp.lz");
@@ -20737,7 +20737,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if P_MEGA_EVOLUTIONS
+#if TRUE
     const u32 gMonFrontPic_DiancieMega[] = INCBIN_U32("graphics/pokemon/diancie/mega/front.4bpp.lz");
     const u32 gMonPalette_DiancieMega[] = INCBIN_U32("graphics/pokemon/diancie/mega/normal.gbapal.lz");
     const u32 gMonBackPic_DiancieMega[] = INCBIN_U32("graphics/pokemon/diancie/mega/back.4bpp.lz");

@@ -4518,6 +4518,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sClefairyLevelUpLearnset,
         .teachableLearnset = sClefairyTeachableLearnset,
+        .eggMoveLearnset = sCleffaEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_CLEFABLE}),
     },
 
@@ -5004,6 +5005,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sJigglypuffLevelUpLearnset,
         .teachableLearnset = sJigglypuffTeachableLearnset,
+        .eggMoveLearnset = sIgglybuffEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_WIGGLYTUFF}),
     },
 
@@ -13495,7 +13497,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sKangaskhanLevelUpLearnset,
         .teachableLearnset = sKangaskhanTeachableLearnset,
-        .eggMoveLearnset = sKangaskhanEggMoveLearnset,
+        // .eggMoveLearnset = sKangaskhanEggMoveLearnset,
         // .formSpeciesIdTable = sKangaskhanFormSpeciesIdTable,
         // .formChangeTable = sKangaskhanFormChangeTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 90, SPECIES_KANGASKHAN_MEGA}),
@@ -13555,7 +13557,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         // .isMegaEvolution = TRUE,
         .levelUpLearnset = sKangaskhanLevelUpLearnset,
         .teachableLearnset = sKangaskhanTeachableLearnset,
-        .eggMoveLearnset = sKangaskhanEggMoveLearnset,
+        // .eggMoveLearnset = sKangaskhanEggMoveLearnset,
         // .formSpeciesIdTable = sKangaskhanFormSpeciesIdTable,
         // .formChangeTable = sKangaskhanFormChangeTable,
     },

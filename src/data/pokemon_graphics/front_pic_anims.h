@@ -6641,7 +6641,7 @@ static const union AnimCmd sAnim_Audino_1[] =
     ANIMCMD_END,
 };
 
-#if P_MEGA_EVOLUTIONS
+#if TRUE
 PLACEHOLDER_ANIM_SINGLE_FRAME(AudinoMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_AUDINO
@@ -8846,7 +8846,7 @@ static const union AnimCmd sAnim_Diancie_1[] =
     ANIMCMD_END,
 };
 
-#if P_MEGA_EVOLUTIONS
+#if TRUE
 PLACEHOLDER_ANIM_SINGLE_FRAME(DiancieMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DIANCIE
@@ -11650,7 +11650,7 @@ SINGLE_ANIMATION(Excadrill);
 #endif //P_FAMILY_DRILBUR
 #if P_FAMILY_AUDINO
 SINGLE_ANIMATION(Audino);
-#if P_MEGA_EVOLUTIONS
+#if TRUE
 SINGLE_ANIMATION(AudinoMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_AUDINO
@@ -12092,7 +12092,7 @@ SINGLE_ANIMATION(ZygardeComplete);
 #endif //P_FAMILY_ZYGARDE
 #if P_FAMILY_DIANCIE
 SINGLE_ANIMATION(Diancie);
-#if P_MEGA_EVOLUTIONS
+#if TRUE
 SINGLE_ANIMATION(DiancieMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DIANCIE
