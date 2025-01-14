@@ -1346,7 +1346,7 @@ static const u16 sGenesectFormSpeciesIdTable[] = {
 #if P_FAMILY_FROAKIE
 static const u16 sGreninjaFormSpeciesIdTable[] = {
     SPECIES_GRENINJA,
-    SPECIES_GRENINJA_BATTLE_BOND,
+    // SPECIES_GRENINJA_BATTLE_BOND,
     SPECIES_GRENINJA_ASH,
     FORM_SPECIES_END,
 };
@@ -1482,8 +1482,8 @@ static const u16 sMeowsticFormSpeciesIdTable[] = {
 
 #if P_FAMILY_HONEDGE
 static const u16 sAegislashFormSpeciesIdTable[] = {
-    SPECIES_AEGISLASH_SHIELD,
     SPECIES_AEGISLASH_BLADE,
+    SPECIES_AEGISLASH_SHIELD,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_HONEDGE
@@ -1556,7 +1556,7 @@ static const u16 sZygardeFormSpeciesIdTable[] = {
 #if P_FAMILY_DIANCIE
 static const u16 sDiancieFormSpeciesIdTable[] = {
     SPECIES_DIANCIE,
-#if P_MEGA_EVOLUTIONS
+#if TRUE
     SPECIES_DIANCIE_MEGA,
 #endif
     FORM_SPECIES_END,
