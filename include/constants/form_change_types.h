@@ -63,7 +63,7 @@
 #define FORM_CHANGE_END_BATTLE_TERRAIN          8
 
 // Form change that activates when the Pokémon is switched out in battle.
-// param1: ability to check, optional
+// param1: item to hold, optional
 #define FORM_CHANGE_BATTLE_SWITCH               9
 
 // Form change that activates when the Pokémon's HP % passes a certain threshold.

@@ -147,7 +147,7 @@ void ApplyDynamaxHPMultiplier(u32 battler, struct Pokemon* mon)
 // Returns the non-Dynamax HP of a Pokemon.
 u16 GetNonDynamaxHP(u32 battler)
 {
-    if (GetActiveGimmick(battler) != GIMMICK_DYNAMAX || gBattleMons[battler].species == SPECIES_SHEDINJA)
+    if (GetActiveGimmick(battler) != GIMMICK_DYNAMAX) //|| gBattleMons[battler].species == SPECIES_SHEDINJA)
         return gBattleMons[battler].hp;
     else
     {
@@ -160,7 +160,7 @@ u16 GetNonDynamaxHP(u32 battler)
 // Returns the non-Dynamax Max HP of a Pokemon.
 u16 GetNonDynamaxMaxHP(u32 battler)
 {
-    if (GetActiveGimmick(battler) != GIMMICK_DYNAMAX || gBattleMons[battler].species == SPECIES_SHEDINJA)
+    if (GetActiveGimmick(battler) != GIMMICK_DYNAMAX) //|| gBattleMons[battler].species == SPECIES_SHEDINJA)
         return gBattleMons[battler].maxHP;
     else
     {
