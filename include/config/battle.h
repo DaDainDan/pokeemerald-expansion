@@ -2,7 +2,7 @@
 #define GUARD_CONFIG_BATTLE_H
 
 // Calculation settings
-#define B_CRIT_CHANCE               GEN_LATEST // Chances of a critical hit landing. See CalcCritChanceStage. Gen6+ chances guarantee that Farfetch'd and Sirfetch'd always get critical hits while holding a Leek and using high-crit ratio moves.
+#define B_CRIT_CHANCE               GEN_6 // Chances of a critical hit landing. See CalcCritChanceStage. Gen6+ chances guarantee that Farfetch'd and Sirfetch'd always get critical hits while holding a Leek and using high-crit ratio moves.
 #define B_CRIT_MULTIPLIER           GEN_LATEST // In Gen6+, critical hits multiply damage by 1.5 instead of 2.
 #define B_PARALYSIS_SPEED           GEN_LATEST // In Gen7+, Speed is decreased by 50% instead of 75%.
 #define B_CONFUSION_SELF_DMG_CHANCE GEN_LATEST // In Gen7+, confusion has a 33.3% of self-damage, instead of 50%.
@@ -31,7 +31,7 @@
 #define B_PSYWAVE_DMG               GEN_LATEST // Psywave's damage formula. See Cmd_psywavedamageeffect.
 #define B_PAYBACK_SWITCH_BOOST      GEN_LATEST // In Gen5+, if the opponent switches out, Payback's damage will no longer be doubled.
 #define B_HIDDEN_POWER_DMG          GEN_LATEST // In Gen6+, Hidden Power's base power was set to always be 60. Before, it was determined by the mon's IVs.
-#define B_ROUGH_SKIN_DMG            GEN_LATEST // In Gen4+, Rough Skin contact damage is 1/8th of max HP instead of 1/16th. This will also affect Iron Barbs.
+#define B_ROUGH_SKIN_DMG            GEN_3 // In Gen4+, Rough Skin contact damage is 1/8th of max HP instead of 1/16th. This will also affect Iron Barbs.
 #define B_KNOCK_OFF_DMG             GEN_5 // In Gen6+, Knock Off deals 50% more damage when knocking off an item.
 #define B_SPORT_DMG_REDUCTION       GEN_4 // In Gen5+, Water/Mud Sport reduce Fire/Electric Damage by 67% instead of 50%.
 #define B_EXPLOSION_DEFENSE         GEN_LATEST // In Gen5+, Self-Destruct and Explosion don't halve the targets' defense.
@@ -77,7 +77,7 @@
 #define B_UPDATED_ABILITY_DATA      GEN_LATEST // Affects flags
 
 // Move accuracy settings
-#define B_TOXIC_NEVER_MISS          GEN_LATEST // In Gen6+, if Toxic is used by a Poison-type Pokémon, it will never miss.
+#define B_TOXIC_NEVER_MISS          GEN_5 // In Gen6+, if Toxic is used by a Poison-type Pokémon, it will never miss.
 #define B_MINIMIZE_DMG_ACC          GEN_LATEST // In Gen6+, moves that causes double damage to minimized Pokémon will also skip accuracy checks.
 #define B_BLIZZARD_HAIL             GEN_LATEST // In Gen4+, Blizzard bypasses accuracy checks if it's hailing.
 #define B_SHEER_COLD_ACC            GEN_LATEST // In Gen7+, Sheer Cold's base chance of hitting is reduced to 20% if the user isn't Ice-typed.
@@ -140,7 +140,7 @@
 #define B_PLUS_MINUS_INTERACTION    GEN_LATEST // In Gen5+, Plus and Minus can be activated with themselves and the opposite ability. Before, only the opposing ability could activate it.
 #define B_WEATHER_FORMS             GEN_LATEST // In Gen5+, Castform and Cherrim revert to their base form upon losing their respective ability. Cherrim needs Flower Gift to swap forms.
 #define B_SYMBIOSIS_GEMS            GEN_LATEST // In Gen7+, Symbiosis passes an item after a gem-boosted attack. Previously, items are passed before the gem-boosted attack hits, making the item effect apply.
-#define B_ABSORBING_ABILITY_STRING  GEN_LATEST // In Gen5+, the abilities that absorb moves of a certain type use a generic string for stat increases and decreases.
+#define B_ABSORBING_ABILITY_STRING  GEN_4 // In Gen5+, the abilities that absorb moves of a certain type use a generic string for stat increases and decreases.
 #define B_REDIRECT_ABILITY_IMMUNITY GEN_LATEST // In Gen5+, Pokémon with Lightning Rod/Storm Drain become immune to Electric/Water-type moves and increase their Sp. Attack by 1 stage on top of the redirecting effect.
 #define B_LEAF_GUARD_PREVENTS_REST  GEN_LATEST // In Gen5+, Leaf Guard prevents the use of Rest in harsh sunlight.
 #define B_SNOW_WARNING              GEN_LATEST // In Gen9+, Snow Warning will summon snow instead of hail.
@@ -164,7 +164,7 @@
 #define B_TRAINERS_KNOCK_OFF_ITEMS  TRUE       // If TRUE, trainers can steal/swap your items (non-berries are restored after battle). In vanilla games trainers cannot steal items.
 #define B_RETURN_STOLEN_NPC_ITEMS   GEN_LATEST // In Gen5+, Thief and Covet no longer steal items from NPCs.
 #define B_RESTORE_HELD_BATTLE_ITEMS GEN_LATEST // In Gen9, all non-berry items are restored after battle.
-#define B_SOUL_DEW_BOOST            GEN_LATEST // In Gens3-6, Soul Dew boosts Latis' Sp. Atk and Sp. Def. In Gen7+ it boosts the power of their Psychic and Dragon type moves instead.
+#define B_SOUL_DEW_BOOST            GEN_4 // In Gens3-6, Soul Dew boosts Latis' Sp. Atk and Sp. Def. In Gen7+ it boosts the power of their Psychic and Dragon type moves instead.
 #define B_NET_BALL_MODIFIER         GEN_LATEST // In Gen7+, Net Ball's catch multiplier is x5 instead of x3.
 #define B_DIVE_BALL_MODIFIER        GEN_LATEST // In Gen4+, Dive Ball's effectiveness increases by x3.5 when Surfing or Fishing.
 #define B_NEST_BALL_MODIFIER        GEN_LATEST // Nest Ball's formula varies depending on the Gen. See Cmd_handleballthrow.
@@ -183,7 +183,7 @@
 // To use the following features in scripting, replace the 0s with the flag ID you're assigning it to.
 // Eg: Replace with FLAG_UNUSED_0x264 so you can use that flag to toggle the feature.
 #define B_FLAG_INVERSE_BATTLE       FLAG_UNUSED_0x26A     // If this flag is set, the battle's type effectiveness are inversed. For example, fire is super effective against water.
-#define B_FLAG_FORCE_DOUBLE_WILD    0     // If this flag is set, all land and surfing wild battles will be double battles.
+#define B_FLAG_FORCE_DOUBLE_WILD    FLAG_UNUSED_0x26C     // If this flag is set, all land and surfing wild battles will be double battles.
 #define B_SMART_WILD_AI_FLAG        0     // If not 0, you can set this flag in a script to enable smart wild pokemon
 #define B_FLAG_NO_BAG_USE           FLAG_UNUSED_0x26B     // If this flag is set, the ability to use the bag in battle is disabled.
 #define B_FLAG_NO_CATCHING          0     // If this flag is set, the ability to catch wild Pokémon is disabled.
@@ -228,7 +228,7 @@
 #define B_SHOW_TARGETS              TRUE  // If set to TRUE, all available targets, for moves hitting 2 or 3 Pokémon, will be shown before selecting a move.
 #define B_SHOW_CATEGORY_ICON        TRUE  // If set to TRUE, it will show an icon in the summary and move relearner showing the move's category.
 #define B_HIDE_HEALTHBOX_IN_ANIMS   TRUE  // If set to TRUE, hides healthboxes during move animations.
-#define B_WAIT_TIME_MULTIPLIER      4    // This determines how long text pauses in battle last. Vanilla is 16. Lower values result in faster battles.
+#define B_WAIT_TIME_MULTIPLIER      8    // This determines how long text pauses in battle last. Vanilla is 16. Lower values result in faster battles.
 #define B_QUICK_MOVE_CURSOR_TO_RUN  TRUE // If set to TRUE, pushing B in the battle options against a wild encounter will move the cursor to the run option
 #define B_MOVE_DESCRIPTION_BUTTON   L_BUTTON // If set to a button other than B_LAST_USED_BALL_BUTTON, pressing this button will open the move description menu
 
@@ -282,7 +282,7 @@
 #define SHOW_TYPES_NEVER    0
 #define SHOW_TYPES_ALWAYS   1
 #define SHOW_TYPES_CAUGHT   2
-#define B_SHOW_TYPES        SHOW_TYPES_NEVER // When defined as SHOW_TYPES_ALWAYS, after selecting "Fight" in battle, the types of all Pokemon are revealed. Whe defined as SHOW_TYPES_OWN, types are only revealed if the player owns the mon in question.
+#define B_SHOW_TYPES        SHOW_TYPES_CAUGHT // When defined as SHOW_TYPES_ALWAYS, after selecting "Fight" in battle, the types of all Pokemon are revealed. Whe defined as SHOW_TYPES_OWN, types are only revealed if the player owns the mon in question.
 
 // Pokémon battle sprite settings
 #define B_ENEMY_MON_SHADOW_STYLE        GEN_3 // In Gen4+, all enemy Pokemon will have a shadow drawn beneath them.
