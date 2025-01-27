@@ -1606,3 +1606,22 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 	.string "“{STR_VAR_1}” is the\n"
 # 804 "data/maps/DewfordTown/scripts.pory"
 	.string "definition of “in” right now.$"
+
+DewfordTown_EventScript_Fisherman::
+# 807 "data/maps/DewfordTown/scripts.pory"
+	lock
+# 808 "data/maps/DewfordTown/scripts.pory"
+	faceplayer
+# 809 "data/maps/DewfordTown/scripts.pory"
+	msgbox DewfordTown_EventScript_Fisherman_Text_0, MSGBOX_DEFAULT
+# 813 "data/maps/DewfordTown/scripts.pory"
+	release
+	end
+
+
+DewfordTown_EventScript_Fisherman_Text_0:
+# 809 "data/maps/DewfordTown/scripts.pory"
+	.string "I can't believe this.\p"
+	.string "It's the start of fishing season and\n"
+	.string "someone's stolen my fishing rods.\l"
+	.string "Talk about a cruel world.$"

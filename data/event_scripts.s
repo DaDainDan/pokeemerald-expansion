@@ -1158,3 +1158,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AlteringCave_B1F_2R/scripts.inc"
 
 	.include "data/maps/AlteringCave_B2F/scripts.inc"
+
+	.include "data/maps/Underwater_Route107/scripts.inc"

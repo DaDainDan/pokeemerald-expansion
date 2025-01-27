@@ -687,8 +687,10 @@ MauvilleCity_GameCorner_EventScript_Rotom::
 
 MauvilleCity_GameCorner_EventScript_ConfirmPrizeMon::
 	bufferspeciesname STR_VAR_1, VAR_TEMP_1
+	showmonpic VAR_TEMP_1, 10, 3
 	msgbox MauvilleCity_GameCorner_Text_SoYourChoiceIsX, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_CancelMonSelect
+	hidemonpic
 	checkcoins VAR_RESULT
 	goto_if_lt VAR_RESULT, VAR_TEMP_2, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForMon
 	switch VAR_TEMP_1
@@ -775,6 +777,7 @@ MauvilleCity_GameCorner_EventScript_TransferredToPC::
 	end	
 
 MauvilleCity_GameCorner_EventScript_CancelMonSelect::
+	hidemonpic
 	msgbox MauvilleCity_GameCorner_Text_OhIsThatSo, MSGBOX_DEFAULT
 	hidecoinsbox 0, 0
 	release
