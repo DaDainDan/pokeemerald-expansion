@@ -427,391 +427,391 @@ BattleFrontier_BattleFactoryPreBattleRoom_EventScript_CommentOnOpponentType::
 # 214 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	call_if_eq VAR_0x8005, TYPE_FLYING, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFlying
 # 215 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8005, TYPE_POISON, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesPoison
+	call_if_eq VAR_0x8005, TYPE_WIND, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFlying
 # 216 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8005, TYPE_GROUND, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGround
+	call_if_eq VAR_0x8005, TYPE_POISON, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesPoison
 # 217 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8005, TYPE_ROCK, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesRock
+	call_if_eq VAR_0x8005, TYPE_GROUND, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGround
 # 218 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8005, TYPE_BUG, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesBug
+	call_if_eq VAR_0x8005, TYPE_TERRA, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGround
 # 219 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8005, TYPE_GHOST, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGhost
+	call_if_eq VAR_0x8005, TYPE_SAND, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGround 
 # 220 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8005, TYPE_STEEL, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesSteel
+	call_if_eq VAR_0x8005, TYPE_ROCK, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesRock
 # 221 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8005, TYPE_FIRE, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFire
+	call_if_eq VAR_0x8005, TYPE_BUG, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesBug
 # 222 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8005, TYPE_WATER, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesWater
+	call_if_eq VAR_0x8005, TYPE_GHOST, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGhost
 # 223 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8005, TYPE_GRASS, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGrass
+	call_if_eq VAR_0x8005, TYPE_UNDEAD, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGhost
 # 224 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8005, TYPE_ELECTRIC, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesElectric
+	call_if_eq VAR_0x8005, TYPE_STEEL, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesSteel
 # 225 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8005, TYPE_PSYCHIC, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesPsychic
+	call_if_eq VAR_0x8005, TYPE_FIRE, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFire
 # 226 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8005, TYPE_ICE, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesIce
+	call_if_eq VAR_0x8005, TYPE_FLAME, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFire
 # 227 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8005, TYPE_DRAGON, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesDragon
+	call_if_eq VAR_0x8005, TYPE_WATER, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesWater
 # 228 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8005, TYPE_DARK, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesDark
+	call_if_eq VAR_0x8005, TYPE_OCEAN, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesWater
 # 229 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8005, TYPE_FAIRY, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFairy
+	call_if_eq VAR_0x8005, TYPE_MUD, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGround
 # 230 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8005, NUMBER_OF_MON_TYPES, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentHasNoMostCommonType
+	call_if_eq VAR_0x8005, TYPE_GRASS, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGrass
 # 231 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	return
+	call_if_eq VAR_0x8005, TYPE_ELECTRIC, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesElectric
 # 232 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-
+	call_if_eq VAR_0x8005, TYPE_PSYCHIC, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesPsychic
 # 233 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesNormal::
+	call_if_eq VAR_0x8005, TYPE_ICE, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesIce
 # 234 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInNormalType, MSGBOX_DEFAULT
+	call_if_eq VAR_0x8005, TYPE_FROST, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesIce
 # 235 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	return
+	call_if_eq VAR_0x8005, TYPE_DRAGON, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesDragon
 # 236 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-
+	call_if_eq VAR_0x8005, TYPE_DARK, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesDark
 # 237 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFighting::
+	call_if_eq VAR_0x8005, TYPE_FAIRY, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFairy
 # 238 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFightingType, MSGBOX_DEFAULT
+	call_if_eq VAR_0x8005, NUMBER_OF_MON_TYPES, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentHasNoMostCommonType
 # 239 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 240 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 241 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFlying::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesNormal::
 # 242 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFlyingType, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInNormalType, MSGBOX_DEFAULT
 # 243 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 244 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 245 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesPoison::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFighting::
 # 246 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPoisonType, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFightingType, MSGBOX_DEFAULT
 # 247 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 248 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 249 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGround::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFlying::
 # 250 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGroundType, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFlyingType, MSGBOX_DEFAULT
 # 251 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 252 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 253 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesRock::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesPoison::
 # 254 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInRockType, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPoisonType, MSGBOX_DEFAULT
 # 255 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 256 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 257 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesBug::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGround::
 # 258 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInBugType, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGroundType, MSGBOX_DEFAULT
 # 259 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 260 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 261 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGhost::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesRock::
 # 262 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGhostType, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInRockType, MSGBOX_DEFAULT
 # 263 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 264 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 265 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesSteel::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesBug::
 # 266 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSteelType, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInBugType, MSGBOX_DEFAULT
 # 267 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 268 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 269 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFire::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGhost::
 # 270 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFireType, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGhostType, MSGBOX_DEFAULT
 # 271 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 272 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 273 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesWater::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesSteel::
 # 274 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInWaterType, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSteelType, MSGBOX_DEFAULT
 # 275 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 276 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 277 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGrass::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFire::
 # 278 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGrassType, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFireType, MSGBOX_DEFAULT
 # 279 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 280 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 281 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesElectric::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesWater::
 # 282 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInElectricType, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInWaterType, MSGBOX_DEFAULT
 # 283 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 284 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 285 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesPsychic::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGrass::
 # 286 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPsychicType, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGrassType, MSGBOX_DEFAULT
 # 287 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 288 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 289 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesIce::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesElectric::
 # 290 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInIceType, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInElectricType, MSGBOX_DEFAULT
 # 291 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 292 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 293 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesDragon::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesPsychic::
 # 294 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDragonType, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPsychicType, MSGBOX_DEFAULT
 # 295 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 296 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 297 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesDark::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesIce::
 # 298 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDarkType, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInIceType, MSGBOX_DEFAULT
 # 299 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 300 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 301 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFairy::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesDragon::
 # 302 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFairyType, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDragonType, MSGBOX_DEFAULT
 # 303 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 304 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 305 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentHasNoMostCommonType::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesDark::
 # 306 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerHasNoClearFavorite, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDarkType, MSGBOX_DEFAULT
 # 307 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 308 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 309 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_CommentOnOpponentStyle::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFairy::
 # 310 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8006, FACTORY_STYLE_NONE, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleUnrestrained
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFairyType, MSGBOX_DEFAULT
 # 311 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8006, FACTORY_STYLE_PREPARATION, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleTotalPreparation
+	return
 # 312 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8006, FACTORY_STYLE_SLOW_STEADY, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleSlowAndSteady
+
 # 313 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8006, FACTORY_STYLE_ENDURANCE, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleEndurance
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentHasNoMostCommonType::
 # 314 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8006, FACTORY_STYLE_HIGH_RISK, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleHighRisk
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerHasNoClearFavorite, MSGBOX_DEFAULT
 # 315 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8006, FACTORY_STYLE_WEAKENING, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleWeakenFoe
+	return
 # 316 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8006, FACTORY_STYLE_UNPREDICTABLE, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleImpossibleToPredict
+
 # 317 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8006, FACTORY_STYLE_WEATHER, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleDependsOnFlow
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_CommentOnOpponentStyle::
 # 318 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call_if_eq VAR_0x8006, FACTORY_NUM_STYLES, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleFlexible
+	call_if_eq VAR_0x8006, FACTORY_STYLE_NONE, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleUnrestrained
 # 319 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	return
+	call_if_eq VAR_0x8006, FACTORY_STYLE_PREPARATION, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleTotalPreparation
 # 320 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-
+	call_if_eq VAR_0x8006, FACTORY_STYLE_SLOW_STEADY, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleSlowAndSteady
 # 321 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleUnrestrained::
+	call_if_eq VAR_0x8006, FACTORY_STYLE_ENDURANCE, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleEndurance
 # 322 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleUnrestrained, MSGBOX_DEFAULT
+	call_if_eq VAR_0x8006, FACTORY_STYLE_HIGH_RISK, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleHighRisk
 # 323 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	return
+	call_if_eq VAR_0x8006, FACTORY_STYLE_WEAKENING, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleWeakenFoe
 # 324 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-
+	call_if_eq VAR_0x8006, FACTORY_STYLE_UNPREDICTABLE, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleImpossibleToPredict
 # 325 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleTotalPreparation::
+	call_if_eq VAR_0x8006, FACTORY_STYLE_WEATHER, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleDependsOnFlow
 # 326 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleTotalPreparation, MSGBOX_DEFAULT
+	call_if_eq VAR_0x8006, FACTORY_NUM_STYLES, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleFlexible
 # 327 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 328 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 329 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleSlowAndSteady::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleUnrestrained::
 # 330 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleSlowAndSteady, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleUnrestrained, MSGBOX_DEFAULT
 # 331 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 332 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 333 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleEndurance::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleTotalPreparation::
 # 334 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleEndurance, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleTotalPreparation, MSGBOX_DEFAULT
 # 335 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 336 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 337 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleHighRisk::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleSlowAndSteady::
 # 338 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleHighRisk, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleSlowAndSteady, MSGBOX_DEFAULT
 # 339 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 340 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 341 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleWeakenFoe::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleEndurance::
 # 342 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleWeakenFoe, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleEndurance, MSGBOX_DEFAULT
 # 343 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 344 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 345 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleImpossibleToPredict::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleHighRisk::
 # 346 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleImpossibleToPredict, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleHighRisk, MSGBOX_DEFAULT
 # 347 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 348 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 349 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleDependsOnFlow::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleWeakenFoe::
 # 350 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleDependsOnFlow, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleWeakenFoe, MSGBOX_DEFAULT
 # 351 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 352 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 353 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleFlexible::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleImpossibleToPredict::
 # 354 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleFlexible, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleImpossibleToPredict, MSGBOX_DEFAULT
 # 355 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	return
 # 356 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 357 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskReadyForHead::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleDependsOnFlow::
 # 358 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	message BattleFrontier_BattleFactoryPreBattleRoom_Text_PreparedToFaceHead
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleDependsOnFlow, MSGBOX_DEFAULT
 # 359 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	waitmessage
+	return
 # 360 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	call BattleFrontier_EventScript_GetCantRecordBattle
-# 361 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskReadyForHeadNoRecord
-# 362 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	multichoice 19, 4, MULTI_GO_ON_RECORD_REST_RETIRE, TRUE
-# 363 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	switch VAR_RESULT
-# 364 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	case 0, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskSwapBeforeHead
-# 365 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	case 1, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskRecordBattle
-# 366 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	case 2, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskPauseChallenge
-# 367 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	case 3, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskRetireChallenge
-# 368 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	case MULTI_B_PRESSED, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskReadyForHead
-# 369 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
+# 361 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_StyleFlexible::
+# 362 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleFlexible, MSGBOX_DEFAULT
+# 363 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	return
+# 364 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+
+# 365 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskReadyForHead::
+# 366 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	message BattleFrontier_BattleFactoryPreBattleRoom_Text_PreparedToFaceHead
+# 367 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	waitmessage
+# 368 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	call BattleFrontier_EventScript_GetCantRecordBattle
+# 369 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	goto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskReadyForHeadNoRecord
 # 370 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskReadyForHeadNoRecord::
+	multichoice 19, 4, MULTI_GO_ON_RECORD_REST_RETIRE, TRUE
 # 371 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	multichoice 20, 6, MULTI_GO_ON_REST_RETIRE, TRUE
-# 372 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	switch VAR_RESULT
-# 373 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+# 372 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	case 0, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskSwapBeforeHead
+# 373 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	case 1, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskRecordBattle
 # 374 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	case 1, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskPauseChallenge
+	case 2, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskPauseChallenge
 # 375 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	case 2, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskRetireChallenge
+	case 3, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskRetireChallenge
 # 376 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	case MULTI_B_PRESSED, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskReadyForHead
 # 377 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 378 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskSwapBeforeHead::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskReadyForHeadNoRecord::
 # 379 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_CantTellAnythingAboutHead, MSGBOX_DEFAULT
+	multichoice 20, 6, MULTI_GO_ON_REST_RETIRE, TRUE
 # 380 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_LikeToSwapMon, MSGBOX_YESNO
-# 381 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	switch VAR_RESULT
+# 381 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	case 0, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskSwapBeforeHead
 # 382 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	case NO, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_EnterBattleRoom
+	case 1, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskPauseChallenge
 # 383 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	case YES, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_SwapMons
+	case 2, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskRetireChallenge
 # 384 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	case MULTI_B_PRESSED, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_EnterBattleRoom
+	case MULTI_B_PRESSED, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskReadyForHead
 # 385 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 386 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_WalkToBattleRoomLv50::
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_AskSwapBeforeHead::
 # 387 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleFactoryPreBattleRoom_Movement_GuideWalkToBattleRoomLv50
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_CantTellAnythingAboutHead, MSGBOX_DEFAULT
 # 388 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleFactoryPreBattleRoom_Movement_PlayerWalkToBattleRoomLv50
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_LikeToSwapMon, MSGBOX_YESNO
 # 389 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	return
+	switch VAR_RESULT
 # 390 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-
+	case NO, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_EnterBattleRoom
 # 391 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_WalkToBattleRoomLvOpen::
+	case YES, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_SwapMons
 # 392 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleFactoryPreBattleRoom_Movement_GuideWalkToBattleRoomLvOpen
+	case MULTI_B_PRESSED, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_EnterBattleRoom
 # 393 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleFactoryPreBattleRoom_Movement_PlayerWalkToBattleRoomLvOpen
-# 394 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	return
-# 395 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
+# 394 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_WalkToBattleRoomLv50::
+# 395 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleFactoryPreBattleRoom_Movement_GuideWalkToBattleRoomLv50
 # 396 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Movement_PlayerEnterRoom:
+	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleFactoryPreBattleRoom_Movement_PlayerWalkToBattleRoomLv50
 # 397 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_up
+	return
 # 398 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_up
+
 # 399 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_up
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_WalkToBattleRoomLvOpen::
 # 400 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_up
+	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleFactoryPreBattleRoom_Movement_GuideWalkToBattleRoomLvOpen
 # 401 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_up
+	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleFactoryPreBattleRoom_Movement_PlayerWalkToBattleRoomLvOpen
 # 402 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	step_end
+	return
 # 403 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 404 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Movement_PlayerWalkToBattleRoomLv50:
+BattleFrontier_BattleFactoryPreBattleRoom_Movement_PlayerEnterRoom:
 # 405 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	walk_up
 # 406 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_left
+	walk_up
 # 407 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_left
+	walk_up
 # 408 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	walk_up
 # 409 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
@@ -821,13 +821,13 @@ BattleFrontier_BattleFactoryPreBattleRoom_Movement_PlayerWalkToBattleRoomLv50:
 # 411 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 412 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Movement_PlayerWalkToBattleRoomLvOpen:
+BattleFrontier_BattleFactoryPreBattleRoom_Movement_PlayerWalkToBattleRoomLv50:
 # 413 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	walk_up
 # 414 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_right
+	walk_left
 # 415 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_right
+	walk_left
 # 416 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	walk_up
 # 417 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
@@ -837,45 +837,45 @@ BattleFrontier_BattleFactoryPreBattleRoom_Movement_PlayerWalkToBattleRoomLvOpen:
 # 419 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 420 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Movement_AttendantEnterRoom:
+BattleFrontier_BattleFactoryPreBattleRoom_Movement_PlayerWalkToBattleRoomLvOpen:
 # 421 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	walk_up
 # 422 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_up
+	walk_right
 # 423 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_up
+	walk_right
 # 424 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	walk_up
 # 425 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	walk_up
 # 426 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	face_down
-# 427 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	step_end
-# 428 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+# 427 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
+# 428 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+BattleFrontier_BattleFactoryPreBattleRoom_Movement_AttendantEnterRoom:
 # 429 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Movement_GuideWalkToBattleRoomLv50:
+	walk_up
 # 430 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_left
+	walk_up
 # 431 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_left
+	walk_up
 # 432 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	walk_up
 # 433 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	walk_up
 # 434 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	set_invisible
+	face_down
 # 435 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	step_end
 # 436 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 437 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Movement_GuideWalkToBattleRoomLvOpen:
+BattleFrontier_BattleFactoryPreBattleRoom_Movement_GuideWalkToBattleRoomLv50:
 # 438 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_right
+	walk_left
 # 439 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_right
+	walk_left
 # 440 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	walk_up
 # 441 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
@@ -887,428 +887,444 @@ BattleFrontier_BattleFactoryPreBattleRoom_Movement_GuideWalkToBattleRoomLvOpen:
 # 444 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 445 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Movement_AttendantMoveToReceiveCall:
+BattleFrontier_BattleFactoryPreBattleRoom_Movement_GuideWalkToBattleRoomLvOpen:
 # 446 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_left
+	walk_right
 # 447 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_left
+	walk_right
 # 448 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_left
+	walk_up
 # 449 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	step_end
+	walk_up
 # 450 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-
+	set_invisible
 # 451 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Movement_AttendantReturnToPlayer:
-# 452 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_right
-# 453 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_right
-# 454 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	walk_right
-# 455 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	face_down
-# 456 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	step_end
+# 452 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+
+# 453 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+BattleFrontier_BattleFactoryPreBattleRoom_Movement_AttendantMoveToReceiveCall:
+# 454 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	walk_left
+# 455 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	walk_left
+# 456 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	walk_left
 # 457 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-
+	step_end
 # 458 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_HoldMonsChooseFromSelection:
+
 # 459 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "First, we will hold your POKéMON for\n"
+BattleFrontier_BattleFactoryPreBattleRoom_Movement_AttendantReturnToPlayer:
 # 460 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "safekeeping.\p"
+	walk_right
 # 461 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "You may then choose from our\n"
+	walk_right
 # 462 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "selection of POKéMON.$"
+	walk_right
 # 463 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-
+	face_down
 # 464 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_LetUsRestoreMons:
+	step_end
 # 465 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Thank you for competing!\n"
-# 466 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Let us restore your POKéMON!$"
-# 467 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
+# 466 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+BattleFrontier_BattleFactoryPreBattleRoom_Text_HoldMonsChooseFromSelection:
+# 467 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	.string "First, we will hold your POKéMON for\n"
 # 468 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor2ndOpponent:
+	.string "safekeeping.\p"
 # 469 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "The 2nd match is next!\n"
+	.string "You may then choose from our\n"
 # 470 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Are you ready?$"
+	.string "selection of POKéMON.$"
 # 471 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 472 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor3rdOpponent:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_LetUsRestoreMons:
 # 473 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "The 3rd match is next!\n"
+	.string "Thank you for competing!\n"
 # 474 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Are you ready?$"
+	.string "Let us restore your POKéMON!$"
 # 475 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 476 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor4thOpponent:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor2ndOpponent:
 # 477 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "The 4th match is next!\n"
+	.string "The 2nd match is next!\n"
 # 478 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "Are you ready?$"
 # 479 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 480 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor5thOpponent:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor3rdOpponent:
 # 481 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "The 5th match is next!\n"
+	.string "The 3rd match is next!\n"
 # 482 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "Are you ready?$"
 # 483 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 484 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor6thOpponent:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor4thOpponent:
 # 485 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "The 6th match is next!\n"
+	.string "The 4th match is next!\n"
 # 486 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "Are you ready?$"
 # 487 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 488 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor7thOpponent:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor5thOpponent:
 # 489 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Finally, the 7th match is next!\n"
+	.string "The 5th match is next!\n"
 # 490 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "Are you ready?$"
 # 491 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 492 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_SaveAndQuitGame:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor6thOpponent:
 # 493 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Would you like to save and quit\n"
+	.string "The 6th match is next!\n"
 # 494 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "the game?$"
+	.string "Are you ready?$"
 # 495 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 496 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_RetireFromChallenge:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor7thOpponent:
 # 497 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Would you like to retire from your\n"
+	.string "Finally, the 7th match is next!\n"
 # 498 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Battle Swap challenge?$"
+	.string "Are you ready?$"
 # 499 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 500 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_InvestigatedUpcomingOpponent:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_SaveAndQuitGame:
 # 501 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "I've conducted a little investigation\n"
+	.string "Would you like to save and quit\n"
 # 502 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "about your upcoming opponent.$"
+	.string "the game?$"
 # 503 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 504 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInNormalType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_RetireFromChallenge:
 # 505 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "The TRAINER is apparently skilled\n"
+	.string "Would you like to retire from your\n"
 # 506 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "in the handling of the NORMAL type.$"
+	.string "Battle Swap challenge?$"
 # 507 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 508 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFireType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_InvestigatedUpcomingOpponent:
 # 509 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "The TRAINER is apparently skilled\n"
+	.string "I've conducted a little investigation\n"
 # 510 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "in the handling of the FIRE type.$"
+	.string "about your upcoming opponent.$"
 # 511 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 512 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInWaterType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInNormalType:
 # 513 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The TRAINER is apparently skilled\n"
 # 514 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "in the handling of the WATER type.$"
+	.string "in the handling of the NORMAL type.$"
 # 515 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 516 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInElectricType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFireType:
 # 517 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The TRAINER is apparently skilled\n"
 # 518 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "in the handling of the ELECTRIC type.$"
+	.string "in the handling of the FIRE type.$"
 # 519 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 520 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGrassType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInWaterType:
 # 521 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The TRAINER is apparently skilled\n"
 # 522 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "in the handling of the GRASS type.$"
+	.string "in the handling of the WATER type.$"
 # 523 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 524 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInIceType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInElectricType:
 # 525 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The TRAINER is apparently skilled\n"
 # 526 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "in the handling of the ICE type.$"
+	.string "in the handling of the ELECTRIC type.$"
 # 527 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 528 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFightingType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGrassType:
 # 529 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The TRAINER is apparently skilled\n"
 # 530 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "in the handling of the FIGHTING type.$"
+	.string "in the handling of the GRASS type.$"
 # 531 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 532 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPoisonType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInIceType:
 # 533 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The TRAINER is apparently skilled\n"
 # 534 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "in the handling of the POISON type.$"
+	.string "in the handling of the ICE type.$"
 # 535 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 536 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGroundType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFightingType:
 # 537 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The TRAINER is apparently skilled\n"
 # 538 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "in the handling of the GROUND type.$"
+	.string "in the handling of the FIGHTING type.$"
 # 539 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 540 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFlyingType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPoisonType:
 # 541 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The TRAINER is apparently skilled\n"
 # 542 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "in the handling of the FLYING type.$"
+	.string "in the handling of the POISON type.$"
 # 543 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 544 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPsychicType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGroundType:
 # 545 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The TRAINER is apparently skilled\n"
 # 546 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "in the handling of the PSYCHIC type.$"
+	.string "in the handling of the GROUND type.$"
 # 547 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 548 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInBugType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFlyingType:
 # 549 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The TRAINER is apparently skilled\n"
 # 550 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "in the handling of the BUG type.$"
+	.string "in the handling of the FLYING type.$"
 # 551 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 552 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInRockType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPsychicType:
 # 553 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The TRAINER is apparently skilled\n"
 # 554 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "in the handling of the ROCK type.$"
+	.string "in the handling of the PSYCHIC type.$"
 # 555 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 556 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGhostType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInBugType:
 # 557 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The TRAINER is apparently skilled\n"
 # 558 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "in the handling of the GHOST type.$"
+	.string "in the handling of the BUG type.$"
 # 559 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 560 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDragonType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInRockType:
 # 561 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The TRAINER is apparently skilled\n"
 # 562 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "in the handling of the DRAGON type.$"
+	.string "in the handling of the ROCK type.$"
 # 563 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 564 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDarkType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGhostType:
 # 565 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The TRAINER is apparently skilled\n"
 # 566 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "in the handling of the DARK type.$"
+	.string "in the handling of the GHOST type.$"
 # 567 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 568 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFairyType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDragonType:
 # 569 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The TRAINER is apparently skilled\n"
 # 570 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "in the handling of the FAIRY type.$"
+	.string "in the handling of the DRAGON type.$"
 # 571 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 572 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSteelType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDarkType:
 # 573 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The TRAINER is apparently skilled\n"
 # 574 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "in the handling of the STEEL type.$"
+	.string "in the handling of the DARK type.$"
 # 575 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 576 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerHasNoClearFavorite:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFairyType:
 # 577 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "The TRAINER appears to have no clear\n"
+	.string "The TRAINER is apparently skilled\n"
 # 578 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "favorites when it comes to type.$"
+	.string "in the handling of the FAIRY type.$"
 # 579 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 580 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleSlowAndSteady:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSteelType:
 # 581 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "The favorite battle style appears to\n"
+	.string "The TRAINER is apparently skilled\n"
 # 582 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "be slow and steady.$"
+	.string "in the handling of the STEEL type.$"
 # 583 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 584 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleEndurance:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerHasNoClearFavorite:
 # 585 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "The favorite battle style appears to\n"
+	.string "The TRAINER appears to have no clear\n"
 # 586 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "be one of endurance.$"
+	.string "favorites when it comes to type.$"
 # 587 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 588 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleHighRisk:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleSlowAndSteady:
 # 589 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The favorite battle style appears to\n"
 # 590 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "be high risk, high return.$"
+	.string "be slow and steady.$"
 # 591 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 592 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleDependsOnFlow:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleEndurance:
 # 593 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The favorite battle style appears to\n"
 # 594 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "depend on the battle's flow.$"
+	.string "be one of endurance.$"
 # 595 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 596 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleTotalPreparation:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleHighRisk:
 # 597 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The favorite battle style appears to\n"
 # 598 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "be one based on total preparation.$"
+	.string "be high risk, high return.$"
 # 599 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 600 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleWeakenFoe:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleDependsOnFlow:
 # 601 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "The favorite battle style appears\n"
+	.string "The favorite battle style appears to\n"
 # 602 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "to be weakening the foe to start.$"
+	.string "depend on the battle's flow.$"
 # 603 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 604 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleFlexible:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleTotalPreparation:
 # 605 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The favorite battle style appears to\n"
 # 606 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "be flexibly adaptable to the situation.$"
+	.string "be one based on total preparation.$"
 # 607 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 608 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleImpossibleToPredict:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleWeakenFoe:
 # 609 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "The favorite battle style appears to\n"
+	.string "The favorite battle style appears\n"
 # 610 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "be impossible to predict.$"
+	.string "to be weakening the foe to start.$"
 # 611 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 612 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleUnrestrained:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleFlexible:
 # 613 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "The favorite battle style appears to\n"
 # 614 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "be free-spirited and unrestrained.$"
+	.string "be flexibly adaptable to the situation.$"
 # 615 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 616 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_LikeToSwapMon:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleImpossibleToPredict:
 # 617 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Before starting the battle, would you\n"
+	.string "The favorite battle style appears to\n"
 # 618 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "like to swap a POKéMON?$"
+	.string "be impossible to predict.$"
 # 619 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 620 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_YourSwapIsComplete:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_StyleUnrestrained:
 # 621 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Thank you!\n"
+	.string "The favorite battle style appears to\n"
 # 622 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Your POKéMON swap is complete.$"
+	.string "be free-spirited and unrestrained.$"
 # 623 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 624 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_RightThisWay:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_LikeToSwapMon:
 # 625 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Right this way, please!$"
+	.string "Before starting the battle, would you\n"
 # 626 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-
+	.string "like to swap a POKéMON?$"
 # 627 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_SavingDataPleaseWait:
-# 628 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "I am saving your data.\n"
-# 629 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Please wait.$"
-# 630 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
+# 628 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+BattleFrontier_BattleFactoryPreBattleRoom_Text_YourSwapIsComplete:
+# 629 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	.string "Thank you!\n"
+# 630 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	.string "Your POKéMON swap is complete.$"
 # 631 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_RecordLatestBattle:
+
 # 632 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Would you like to record your latest\n"
+BattleFrontier_BattleFactoryPreBattleRoom_Text_RightThisWay:
 # 633 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "battle on your FRONTIER PASS?$"
+	.string "Right this way, please!$"
 # 634 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 635 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_WaitFewMoments:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_SavingDataPleaseWait:
 # 636 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Excuse me! Excuse me, please!\n"
+	.string "I am saving your data.\n"
 # 637 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "May I get you to wait a few moments?$"
+	.string "Please wait.$"
 # 638 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 639 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_UnderstoodSirWillDo:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_RecordLatestBattle:
 # 640 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "…Uh-huh? What?! …Whoa!\n"
+	.string "Would you like to record your latest\n"
 # 641 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Understood, sir! Will do!$"
+	.string "battle on your FRONTIER PASS?$"
 # 642 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 643 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_MessageFromHeadComeRightNow:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_WaitFewMoments:
 # 644 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Oh, my…\n"
+	.string "Excuse me! Excuse me, please!\n"
 # 645 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Sorry to keep you waiting!\p"
+	.string "May I get you to wait a few moments?$"
 # 646 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "I have a message from this facility's\n"
+
 # 647 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "boss, the FACTORY HEAD.\p"
+BattleFrontier_BattleFactoryPreBattleRoom_Text_UnderstoodSirWillDo:
 # 648 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "He says, “We're going to do it!\n"
+	.string "…Uh-huh? What?! …Whoa!\n"
 # 649 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Come here right now!”$"
+	.string "Understood, sir! Will do!$"
 # 650 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 
 # 651 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_PreparedToFaceHead:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_MessageFromHeadComeRightNow:
 # 652 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "The FACTORY HEAD is demanding you.\n"
+	.string "Oh, my…\n"
 # 653 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "Are you prepared to face him?$"
+	.string "Sorry to keep you waiting!\p"
 # 654 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-
+	.string "I have a message from this facility's\n"
 # 655 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-BattleFrontier_BattleFactoryPreBattleRoom_Text_CantTellAnythingAboutHead:
+	.string "boss, the FACTORY HEAD.\p"
 # 656 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
-	.string "I'm terribly sorry, but I can't tell you\n"
+	.string "He says, “We're going to do it!\n"
 # 657 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	.string "Come here right now!”$"
+# 658 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+
+# 659 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+BattleFrontier_BattleFactoryPreBattleRoom_Text_PreparedToFaceHead:
+# 660 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	.string "The FACTORY HEAD is demanding you.\n"
+# 661 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	.string "Are you prepared to face him?$"
+# 662 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+
+# 663 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+BattleFrontier_BattleFactoryPreBattleRoom_Text_CantTellAnythingAboutHead:
+# 664 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
+	.string "I'm terribly sorry, but I can't tell you\n"
+# 665 "data/maps/BattleFrontier_BattleFactoryPreBattleRoom/scripts.pory"
 	.string "anything about the FACTORY HEAD.$"
